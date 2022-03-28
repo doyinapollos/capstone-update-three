@@ -1,0 +1,33 @@
+.MostUsedServices {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.most--services {
+    width: 79%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .most--services {
+        width: 65%;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+    .most--services--h3 {
+        font-size: 1.1rem;
+    }
+}

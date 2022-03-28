@@ -1,0 +1,473 @@
+.Portal {
+    width: 100%;
+    height: auto;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Portal--div--1 {
+    width: 80%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+.Portal--div--1--left {
+    display: flex;
+}
+
+.profile--pic--div {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.available--div {
+    display: flex;
+}
+
+.available--btn {
+    width: 120px;
+    height: 24px;
+    border-radius: 25px;
+    border: 1px solid gray;
+    font-size: 14px;
+    margin: 10px;
+    background-color: white;
+}
+
+.off--span {
+    margin: 10px 0 5px 0;
+    font-size: 12px;
+}
+
+.edit--div {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 0 14px;
+    font-size: 12px;
+}
+
+.profile--btn--1 {
+    width: 150px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-right: 25px;
+}
+
+.profile--btn--2 {
+    width: 150px;
+    height: 35px;
+    background-color: rgb(159, 231, 159);
+    border-radius: 30px;
+    margin-right: 25px;
+}
+
+.Portal--div--2 {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.portal--div--2--a {
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid grey;
+}
+
+.video--div {
+    display: flex;
+    padding: 1rem;
+}
+
+.edit {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.portal--div--2--b {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+}
+
+.portal--div--2--b--1 {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.portal--div--2--b--1a {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work--title--div {
+    display: flex;
+    padding-left: 1rem;
+}
+
+.price--div {
+    display: flex;
+    padding-right: 1rem;
+}
+
+.portal--div--2--b--1b {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.text {
+    width: 70%;
+    height: 70%;
+}
+
+.portal--div--2--b--2 {
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+}
+
+.portal--div--2--b--3 {
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills--div--1 {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skills--div--2 {
+    display: flex;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    padding: 0.8rem;
+    margin: 0.8rem;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .Portal--div--1 {
+        width: 80%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        border-bottom: 1px solid grey;
+    }
+    .location--span {
+        font-size: 13px;
+    }
+    .available--btn {
+        width: 100px;
+        height: 24px;
+        border-radius: 25px;
+        border: 1px solid gray;
+        font-size: 12px;
+        margin: 10px;
+        background-color: white;
+    }
+    .off--span {
+        margin: 10px 0 5px 0;
+        font-size: 12px;
+    }
+    .edit--div {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0 0 14px;
+        font-size: 10px;
+    }
+    .profile--btn--1 {
+        width: 120px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 30px;
+        margin-right: 25px;
+        font-size: 12px;
+    }
+    .profile--btn--2 {
+        width: 120px;
+        height: 30px;
+        background-color: rgb(159, 231, 159);
+        border-radius: 30px;
+        margin-right: 25px;
+        font-size: 12px;
+    }
+    .video--div {
+        display: flex;
+        padding: 0.5rem;
+        font-size: 12px;
+    }
+    .edit {
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        margin-left: 0.6rem;
+        cursor: pointer;
+    }
+    .portal--div--2--a {
+        width: 40%;
+        height: 100%;
+        border-right: 1px solid grey;
+    }
+    .portal--div--2--b {
+        width: 60%;
+        height: 100%;
+        background-color: white;
+    }
+    .portal--div--2--b--1 {
+        width: 100%;
+        height: 50%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid grey;
+    }
+    .portal--div--2--b--1a {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        padding-top: 0.5rem
+    }
+    .work--title--div {
+        display: flex;
+        padding-left: 0.5rem;
+        font-size: 12px;
+    }
+    .price--div {
+        display: flex;
+        padding-right: 0.5rem;
+        font-size: 12px;
+    }
+    .h4 {
+        font-size: 18px;
+    }
+    .portal--div--2--b--1b {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.7rem;
+    }
+    .text {
+        width: 80%;
+        height: 70%;
+        font-size: 12px;
+    }
+    .portal--div--2--b--2 {
+        width: 100%;
+        height: 25%;
+        background-color: white;
+        padding: 0.7rem;
+        border-bottom: 1px solid grey;
+        font-size: 12px;
+    }
+    .portal--div--2--b--3 {
+        width: 100%;
+        height: 25%;
+        background-color: white;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .skills--div--2 {
+        display: flex;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: gainsboro;
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .Portal--div--1 {
+        width: 80%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        border-bottom: 1px solid grey;
+    }
+    .portal--div--2--b--1a {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0.5rem;
+    }
+    .portal--div--2--b--1b {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.7rem;
+    }
+    .text {
+        width: 80%;
+        height: 70%;
+        font-size: 14px;
+    }
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: gainsboro;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .Portal--div--1 {
+        width: 80%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        border-bottom: 1px solid grey;
+    }
+    .portal--div--2--b--1a {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .portal--div--2--b--1b {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0.5rem
+    }
+    .text {
+        width: 80%;
+        height: 70%;
+        font-size: 15px;
+    }
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: gainsboro;
+        padding: 0;
+        margin: 0;
+    }
+}

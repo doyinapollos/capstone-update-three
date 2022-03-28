@@ -1,0 +1,100 @@
+.header {
+    width: 100%;
+    height: 70px;
+    /*position: sticky;
+    top: 0;
+    z-index: 999; */
+}
+
+.nav--bar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
+}
+
+.mobile--nav--bar--color {
+    background: rgba(76, 175, 80, 0.95);
+}
+
+.nav--bar--ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0 15px;
+}
+
+.input--div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    background-color: white;
+}
+
+.input {
+    width: 150px;
+    height: 30px;
+    border: none;
+    padding: 0.8rem;
+}
+
+.search--icon {
+    color: black;
+    font-size: 26px;
+}
+
+.list {
+    margin-right: 15px;
+}
+
+.hamburger--icon--div {
+    display: none;
+}
+
+.mobile--nav--bar {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav--bar--ul {
+        display: none;
+    }
+    .hamburger--icon--div {
+        display: inline-block;
+    }
+    .mobile--nav--bar {
+        width: 100%;
+        background: rgba(76, 175, 80, 0.95);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        transition: 0.3s;
+    }
+    .active {
+        top: 70px;
+    }
+    .mobile--ul {
+        list-style-type: none;
+    }
+    .mobile--list {
+        padding: 1.2rem 1rem;
+        margin: 0 1rem;
+        border-bottom: 1px solid gainsboro;
+    }
+    .input--div {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .input--div {
+        display: none;
+    }
+}

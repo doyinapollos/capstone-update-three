@@ -1,0 +1,95 @@
+    .register {
+        width: 100%;
+        height: 100vh;
+        background: rgba(19, 20, 20, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .register--div {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .register--div--a {
+        width: 45%;
+        height: 90%;
+        background-image: url("https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/uploads/job_description_template/Plumber.jpg");
+        background-size: cover;
+    }
+    
+    .register--div--a--1 {
+        width: 100%;
+        height: 100%;
+        background: rgba(19, 20, 20, 0.8);
+    }
+    
+    .register--div--b {
+        width: 45%;
+        height: 100%;
+        color: white;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .register {
+            width: 100%;
+            height: auto;
+            background: rgba(19, 20, 20, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .register--div {
+            width: 90%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .register--div--a {
+            display: none;
+        }
+        .register--div--b {
+            width: 65%;
+            height: 80%;
+            color: white;
+            padding-bottom: 1rem;
+        }
+    }
+    
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+        .register {
+            width: 100%;
+            height: auto;
+            background: rgba(19, 20, 20, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .register--div {
+            width: 90%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .register--div--a {
+            display: none;
+        }
+        .register--div--b {
+            width: 65%;
+            height: 80%;
+            color: white;
+            padding-bottom: 1rem;
+        }
+    }
