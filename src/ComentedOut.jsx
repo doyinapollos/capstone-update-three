@@ -1,4 +1,12 @@
-{
+import React from "react";
+
+function ComentedOut() {
+    return (
+        <div>
+
+            {/*
+
+            {
     "elements": [{
             "id": 1,
             "title": "I will clean your compound/house",
@@ -81,3 +89,43 @@
         "email": "John@gmail.com"
     }]
 }
+
+package.json(server)
+
+{
+    "name": "capstone-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server": "json-server --watch db.json --port 8000 --middlewares ./range.js",
+        "savis-app": "npm start --prefix savis-app",
+        "dev": "concurrently \"npm run server\" \"npm run savis-app\"",
+        "deploy": "gh-pages -d build",
+        "predeploy": "npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^7.0.0",
+        "json-server": "^0.17.0",
+        "react-icons": "^4.3.1"
+    },
+    "devDependencies": {
+        "gh-pages": "^3.2.3"
+    }
+}
+
+
+            */}
+
+
+
+
+
+        </div>
+    )
+}
+
+export default ComentedOut;

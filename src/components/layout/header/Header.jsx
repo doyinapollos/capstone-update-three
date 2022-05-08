@@ -33,7 +33,7 @@ function Header() {
                     <li className='list ' ><Link to="/specialist"> Specialist Portal </Link></li>
                     <li className='list'><Link to="/register"> Registar </Link></li>
                     <li className='list'><Link to="/sign-in"> Sign in </Link></li>
-                    <li className='list'><Link to="/admin"> Admin portal </Link></li>
+                 {/*  <li className='list'><Link to="/admin"> Admin portal </Link></li> */}
 
                 </ul>
             </div>
@@ -47,7 +47,7 @@ function Header() {
                  <li className='mobile--list' ><Link to="/"> Specialist Portal </Link></li>
                     <li className='mobile--list'><Link to="/register"> Registar </Link></li>
                     <li className='mobile--list'><Link to="/sign-in"> Sign in </Link></li>
-                    <li className='mobile--list'><Link to="/admin"> Admin portal </Link></li>
+                   {/* <li className='mobile--list'><Link to="/admin"> Admin portal </Link></li>*/}
 
                  </ul>
             </div>

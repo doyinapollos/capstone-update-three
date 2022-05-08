@@ -1,8 +1,8 @@
 {
     "name": "savis-app",
-    "proxy": "http://localhost:8000",
+    "homepage": "https://doyinapollos.github.io/capstone-update-one",
+    "proxy": "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=WG3PtPORs4EQFZAhgaAxNKx1VRnxtGiX",
     "version": "0.1.0",
-    "homepage": "https://doyinapollos.github.io/capstone-pro",
     "private": true,
     "dependencies": {
         "@material-ui/core": "^4.12.3",
@@ -22,9 +22,9 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "deploy": "gh-pages -d build",
-        "predeploy": "npm run build",
         "test": "react-scripts test",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {

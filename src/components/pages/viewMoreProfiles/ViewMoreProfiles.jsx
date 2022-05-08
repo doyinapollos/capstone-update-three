@@ -14,15 +14,15 @@ function ViewMoreProfiles() {
 const getAllCard = async () => {
   setIsPending(true)
   const response = await axios.get(
-    "http://localhost:8000/elements"
+    "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=WG3PtPORs4EQFZAhgaAxNKx1VRnxtGiX"
     )
   .catch((err) => {
       console.log(err)
   })
   if(response) {
     setIsPending(false)
-    console.log(response.data)
-    setAllCards(response.data)
+    console.log(response.data.results.books)
+    setAllCards(response.data.results.books)
   }
 }
 
@@ -34,12 +34,12 @@ const displayAllCards = allCards.map(v => {
      return (
       <Card 
       key = {v.id}
-      image = {v.image}
+      image = {v.book_image}
       title = {v.title}
-      rating = {v.rating}
+      publisher = {v.publisher}
       price = {v.price}
-      specialist = {v.specialist}
-      specialistPhoto = {v.specialistPhoto}
+      author = {v.author}
+      description = {v.description }
  />
      )
 })

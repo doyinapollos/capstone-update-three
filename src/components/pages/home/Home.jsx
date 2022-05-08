@@ -8,6 +8,10 @@ import ViewMore from '../../layout/viewMore/ViewMore';
 import MainBottom from '../../layout/mainBottom/MainBottom';
 import Footer from '../../layout/footer/Footer';
 
+/*
+"http://localhost:8000/elements"
+*/ 
+
 function Home() {
 const [displayCards, setDisplayCards] = useState([]);
 const [isloading, setIsLoading] = useState([])
@@ -15,15 +19,16 @@ const [isloading, setIsLoading] = useState([])
 const getDisplayCard = async () => {
     setIsLoading(true);
   const response = await axios.get(
-    "http://localhost:8000/elements"
+    "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=WG3PtPORs4EQFZAhgaAxNKx1VRnxtGiX"
+    
     )
   .catch((err) => {
       console.log(err)
   })
   if(response) {
     setIsLoading(false)
-    console.log(response.data)
-    setDisplayCards(response.data)
+    console.log(response.data.results.books)
+    setDisplayCards(response.data.results.books)
   }
 }
 
@@ -31,24 +36,25 @@ useEffect(() => {
    getDisplayCard()
 }, []);
 
-const someCards = displayCards.filter(function(a) {
-      if (a.id < 5) {
-        return a
+/*const someCards = displayCards.filter(function(a) {
+      if (a.id < 7) {
+        return a 
       }
-})
+                   
+})*/
 
-const getCards = someCards.map(c => {
+const getCards = displayCards.map(c => {
        
        return (
        
         <Card 
-             key = {c.id}
-             image = {c.image}
+             id = {c.id}
+             image = {c.book_image}
              title = {c.title}
-             rating = {c.rating}
+             publisher = {c.publisher}
              price = {c.price}
-             specialist = {c.specialist}
-             specialistPhoto = {c.specialistPhoto}
+             author = {c.author}
+             description = {c.description}
         />
        
        )
